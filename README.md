@@ -1,2 +1,2 @@
-flipcheck.github.io
-===================
+flipcheck
+=========
