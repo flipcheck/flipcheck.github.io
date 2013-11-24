@@ -218,6 +218,16 @@ footer {
 .about-block .name {
     padding-bottom: 0px;
 }
+.about-block .image {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-size: 100%;
+    display: inline-block;
+}
+.chris { background: url('../images/chris.jpg'); }
+.emory { background: url('../images/emory.jpg'); }
+.grant { background: url('../images/grant.jpg'); }
 
 .map {
     width: 100%;
