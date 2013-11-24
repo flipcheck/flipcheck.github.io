@@ -179,12 +179,13 @@ footer {
 
 .product-block,
 .about-block,
-.footer-block {
+.footer-block,
+.product p {
     font: 18px/30px "Helvetica Neue", "Helvetica", sans-serif;
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    min-width: 250px;
+    min-width: 150px;
     padding: 0 20px;
 }
 
@@ -203,6 +204,7 @@ footer {
     text-align: center;
 }
 
+.product p { padding-bottom: 20px; }
 .product-block .icon {
     width: 50px;
     height: 50px;
@@ -246,6 +248,35 @@ footer {
 /*------------------------------------*\
     $RESPONSIVE
 \*------------------------------------*/
+@media only screen and (max-width: 1280px),
+only screen and (max-device-width: 1280px) {
+    header {
+        height: 300px;
+        background-size: 100% auto;
+    }
+    .header-title {
+        top: 125px;
+    }
+    
+    .product-wrapper,
+    .about-wrapper,
+    .map-wrapper,
+    .footer-wrapper {
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 700px),
+only screen and (max-device-width: 700px) {
+    header {
+        height: 200px;
+        background-size: 100% auto;
+    }
+    .header-title {
+        top: 65px;
+    }
+}
 
 @media only screen and (max-width: 500px),
 only screen and (max-device-width: 500px) { 
@@ -277,10 +308,14 @@ only screen and (max-device-width: 500px) {
     .map-canvas { height: 200px; }
     
     footer { padding: 0px; }
+    .footer-block { 
+        text-align: center; 
+        width: 100% !important;
+        padding: 0px;
+    }
     
     .product-block,
-    .about-block,
-    .footer-block {
+    .about-block {
         width: 100% !important;
         padding: 25px;
     }
